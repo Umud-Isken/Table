@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <select value="Выбрать" name="" id="priceSort">
+       
+        <option value="exprnsive">Сначала дорогие</option>
+        <option value="cheap">Сначала дешовые</option>
+        <option value="exprnsivekol">Сначало Малое Количество</option>
+        <option value="cheapkol">Сначала Большое Количество</option>
+    </select>
+    <br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Название:</th>
+                <th>Цена:</th>
+                <th>Количество:</th>
+                <th>Изображение:</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+    <script src="./main,.js"></script>
+</body>
+</html>
